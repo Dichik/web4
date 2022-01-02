@@ -3,4 +3,5 @@
 
 npx prettier --write .
 npx lint-staged
+npx stylelint "**/*.css" --fix
 npx stylelint "**/*.css"
