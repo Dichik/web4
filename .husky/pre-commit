@@ -1,4 +1,4 @@
 #!/bin/sh
 . "$(dirname "$0")/_/husky.sh"
 
-npx prettier --write . && npx lint-staged && npx stylelint "**/*.css" --fix && npx stylelint "**/*.css"
+npm run format && npm run stylelint && npm run jslint
