@@ -1,10 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
-    <p>Hi!</p>
-</body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Burger Menu</title>
+        <link rel="stylesheet" type="text/css" href="./css/main.css" />
+    </head>
+    <body>
+        <header>
+            <div class="burger">
+                <input id="menu-toggle" type="checkbox" />
+                <label class="menu-button" for="menu-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+                <ul class="menu-container">
+                    <li>
+                        <a class="menu-item" href=".">Something1</a>
+                    </li>
+                    <li>
+                        <a class="menu-item" href="."> Something2</a>
+                    </li>
+                    <li>
+                        <a class="menu-item" href="."> Something3</a>
+                    </li>
+                    <li>
+                        <a class="menu-item" href=".">Something4</a>
+                    </li>
+                </ul>
+                <label for="menu-toggle" class="backdrop"></label>
+            </div>
+            <h2>Numbers</h2>
+        </header>
+        <main>
+            <div class="slider">
+                <input checked type="radio" name="slider" id="switch1" />
+                <input type="radio" name="slider" id="switch2" />
+                <input type="radio" name="slider" id="switch3" />
+                <input type="radio" name="slider" id="switch4" />
+                <input type="radio" name="slider" id="switch5" />
+
+                <div class="slides">
+                    <div class="overflow">
+                        <div class="image">
+                            <article><image src="css/images/1.png" /></article>
+                            <article><image src="css/images/2.png" /></article>
+                            <article><image src="css/images/3.png" /></article>
+                            <article><image src="css/images/4.png" /></article>
+                            <article><image src="css/images/5.png" /></article>
+                        </div>
+                    </div>
+                </div>
+                <div class="controls">
+                    <label for="switch1"></label>
+                    <label for="switch2"></label>
+                    <label for="switch3"></label>
+                    <label for="switch4"></label>
+                    <label for="switch5"></label>
+                </div>
+                <div class="active">
+                    <label for="switch1"></label>
+                    <label for="switch2"></label>
+                    <label for="switch3"></label>
+                    <label for="switch4"></label>
+                    <label for="switch5"></label>
+                </div>
+            </div>
+        </main>
+    </body>
 </html>
